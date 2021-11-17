@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent,MainLayoutComponent],
   imports: [CommonModule],
-  exports: [HeaderComponent],
+  exports: [HeaderComponent,MainLayoutComponent],
   providers: [],
 })
 export class LayoutModule {
