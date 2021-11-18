@@ -1,0 +1,187 @@
+.home {
+  top: 74px;
+  position: relative;
+}
+.looking_for_section {
+  position: absolute;
+  margin-top: 161px;
+  left: 133px;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  span {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    color: white;
+    @media screen and (max-width: 1300px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: 1109px) {
+      font-size: 38px;
+    }
+    @media screen and (max-width: 1036px) {
+      font-size: 35px;
+    }
+  }
+  .card {
+    margin-top: 50px;
+    margin-left: 10px;
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11),
+      0px 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 21px 24px 11px 24px;
+    max-width: 480px;
+    display: flex;
+    align-items: flex-start;
+    img {
+      @media screen and (max-width: 1300px) {
+        width: 11%;
+      }
+      @media screen and (max-width: 1109px) {
+        width: 9%;
+      }
+    }
+    .card_body {
+      display: flex;
+      flex-direction: column;
+      margin-left: 24px;
+      .card_title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        @media screen and (max-width: 1300px) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: 1109px) {
+          font-size: 17px;
+        }
+        @media screen and (max-width: 1036px) {
+          font-size: 15px;
+        }
+      }
+      .card_content {
+        margin-top: 15px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 27px;
+        @media screen and (max-width: 1300px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 1109px) {
+          font-size: 13px;
+        }
+        @media screen and (max-width: 1036px) {
+          font-size: 12px;
+        }
+      }
+    }
+    @media screen and (max-width: 1300px) {
+      padding: 19px 21px 9px 21px;
+      max-width: 430px;
+    }
+    @media screen and (max-width: 1230px) {
+      padding: 18px 20px 8px 20px;
+      max-width: 430px;
+    }
+    @media screen and (max-width: 1109px) {
+      padding: 17px 19px 7px 19px;
+      max-width: 410px;
+    }
+    @media screen and (max-width: 1036px) {
+      padding: 16px 18px 6px 18px;
+      max-width: 390px;
+    }
+  }
+}
+.character_section {
+  position: absolute;
+  margin-top: 90px;
+  right: 37px;
+  z-index: -1;
+  @media screen and (max-width: 1300px) {
+    right: 0;
+  }
+  @media screen and (max-width: 1170px) {
+    display: flex;
+    justify-content: right;
+    img {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 1109px) {
+    display: flex;
+    justify-content: right;
+    img {
+      width: 80%;
+    }
+  }
+}
+.help_section_1 {
+  color: #525f7f;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  padding: 35px 55px 85px 55px;
+  top: -10px;
+  right: -35px;
+  width: 379px;
+  height: 225px;
+  position: absolute;
+  background-image: url("../../../assets/images/1.svg");
+  background-size: cover;
+  @media screen and (max-width: 1300px) {
+    padding: 30px 50px 80px 50px;
+    right: 0px;
+    width: 339px;
+    height: 205px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 1170px) {
+    padding: 30px 50px 80px 50px;
+    right: 10px;
+    width: 319px;
+    height: 205px;
+    font-size: 13px;
+  }
+}
+.help_section_2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  color: #525f7f;
+  display: flex;
+  align-items: center;
+  padding: 50px 50px 70px 50px;
+  top: 150px;
+  right: 37px;
+  width: 260px;
+  height: 175px;
+  position: absolute;
+  background-image: url("../../../assets/images/2.svg");
+  background-size: 100% 100%;
+  @media screen and (max-width: 1300px) {
+    padding: 45px 45px 65px 45px;
+    top: 160px;
+    right: 57px;
+    width: 250px;
+    height: 165px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 1170px) {
+    padding: 45px 45px 65px 45px;
+    top: 160px;
+    right: 47px;
+    width: 230px;
+    height: 135px;
+    font-size: 13px;
+  }
+}
