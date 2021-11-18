@@ -1,0 +1,39 @@
+<div class="signin_section">
+  <div class="card">
+    <div class="card_content">
+      <div class="form_section">
+        <div class="form_title">SIGN UP</div>
+        <form class="form_content" [formGroup]="form" (ngSubmit)="login()">
+          <div class="form_group">
+            <label for="email">Email: </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Please enter email"
+              formControlName="email"
+            />
+          </div>
+          <div class="form_group">
+            <label for="password">Password: </label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Please enter password"
+              formControlName="password"
+            />
+          </div>
+          <div class="form_group">
+            <label for="password">Connfirm: </label>
+            <input
+              id="repassword"
+              type="password"
+              placeholder="Please confirm the password"
+              formControlName="repassword"
+            />
+          </div>
+          <button>Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="signin_section">
+  <div class="card">
+    <div class="card_content">
+      <div class="form_section">
+        <div class="form_title">🎉Welcome, please login in here!</div>
+        <form class="form_content" [formGroup]="form" (ngSubmit)="login()">
+          <div class="form_group">
+            <label for="email">Email: </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Please enter email"
+              formControlName="email"
+            />
+          </div>
+          <div class="form_group">
+            <label for="password">Password: </label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Please enter password"
+              formControlName="password"
+            />
+          </div>
+
+          <button>Login</button>
+
+          <div class="register_section">
+            <p>
+              Don't have an account yet?
+              <a routerLink="/signup">Register now</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <img src="assets/images/Ikbal.png" alt="character" />
+    </div>
+  </div>
+</div>

@@ -120,6 +120,22 @@
       width: 80%;
     }
   }
+  @media screen and (max-width: 1170px) {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: right;
+
+    img {
+      width: 70%;
+      margin-right: 50px;
+    }
+  }
 }
 .help_section_1 {
   color: #525f7f;

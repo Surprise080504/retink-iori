@@ -1,0 +1,114 @@
+.signin_section {
+  position: relative;
+  top: 74px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 80px;
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11),
+    0px 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 41px 24px 24px 41px;
+  max-width: 90%;
+  min-height: 500px;
+  min-width: 70%;
+}
+
+.card_content {
+  margin-top: 50px;
+
+  .form_section {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form_title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 27px;
+      color: #525f7f;
+      z-index: 1;
+      @media screen and (max-width: 1200px) {
+        font-size: 38px;
+      }
+      @media screen and (max-width: 1115px) {
+        font-size: 36px;
+      }
+      @media screen and (max-width: 1080px) {
+        font-size: 34px;
+      }
+      @media screen and (max-width: 1050px) {
+        font-size: 32px;
+      }
+    }
+    .form_content {
+      min-width: 500px;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      line-height: 4;
+      .form_group {
+        display: flex;
+        align-items: center;
+        color: #9933ff;
+        label {
+          font-style: normal;
+          font-weight: 00;
+          font-size: 22px;
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+          width: 150px;
+          text-align: center;
+        }
+        input {
+          width: 100%;
+          padding: 22px 30px;
+          margin: 8px 0;
+          font-size: 20px;
+          font-weight: 300;
+          display: inline-block;
+          border: 2px solid #ccc;
+          border-radius: 80px;
+          box-sizing: border-box;
+          transition: all 0.3s ease;
+          &:focus {
+            border-color: #9933ff;
+            transform: scale(0.95);
+          }
+        }
+      }
+      button {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 20px 25px;
+        width: 40%;
+        background: #3d55df;
+        align-self: center;
+        border: 1px solid #aaa;
+        border-radius: 80px;
+        box-shadow: 0px 7px 14px rgba(50, 50, 93, 0.1),
+          0px 3px 6px rgba(0, 0, 0, 0.08);
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #4c60d6;
+        }
+        &:active {
+          transform: scale(0.85);
+          background: #3d55df;
+        }
+      }
+      .register_section {
+        align-self: center;
+      }
+    }
+  }
+}
