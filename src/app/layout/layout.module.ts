@@ -5,9 +5,9 @@ import { HeaderComponent } from './header/header.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 
 @NgModule({
-  declarations: [HeaderComponent,MainLayoutComponent],
-  imports: [CommonModule,RouterModule],
-  exports: [HeaderComponent,MainLayoutComponent],
+  declarations: [HeaderComponent, MainLayoutComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [HeaderComponent, MainLayoutComponent],
   providers: [],
 })
 export class LayoutModule {
@@ -19,7 +19,9 @@ export class LayoutModule {
     parentModule: LayoutModule
   ) {
     if (parentModule) {
-      throw new Error('LayoutModule is already loaded. Import it in the AppModule only.');
+      throw new Error(
+        'LayoutModule is already loaded. Import it in the AppModule only.'
+      );
     }
   }
 }
