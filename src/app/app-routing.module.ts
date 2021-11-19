@@ -21,6 +21,13 @@ const routes: Routes = [
             (m) => m.AboutUsModule
           ),
       },
+      {
+        path: 'services',
+        loadChildren: () =>
+          import('./pages/services/services.module').then(
+            (m) => m.ServicesModule
+          ),
+      },
       { path: 'signup', component: SignUpComponent },
       { path: 'signin', component: SignInComponent },
     ],

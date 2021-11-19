@@ -18,8 +18,6 @@
 }
 
 .card_content {
-  margin-top: 50px;
-
   .form_section {
     min-width: 50%;
     display: flex;
@@ -31,7 +29,7 @@
       font-size: 40px;
       line-height: 27px;
       color: #525f7f;
-      z-index: 1;
+      z-index: 0;
       @media screen and (max-width: 1200px) {
         font-size: 38px;
       }

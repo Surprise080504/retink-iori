@@ -1,0 +1,17 @@
+<div class="services">
+  <div class="card" *ngFor="let service of services">
+    <div class="card_header">{{ service.payload.doc.data().title }}</div>
+    <div class="card_content">
+      <div class="card_content_img_div">
+        <img
+          class="card_content_img"
+          [src]="service.payload.doc.data().imagepath"
+        />
+      </div>
+      <div class="card_content_detail">
+        {{ service.payload.doc.data().description }}
+      </div>
+    </div>
+    <div class="card_footer">Get Started</div>
+  </div>
+</div>

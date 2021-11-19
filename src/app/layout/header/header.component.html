@@ -9,14 +9,27 @@
     <a routerLink="about-us" routerLinkActive="active">About us</a>
   </div>
   <div class="btn_section">
-    <a class="btn_login" routerLink="signin">
-      <img
-        src="assets/icons/login_btn_key.svg"
-        alt="logo"
-        width="16"
-        height="16"
-      />
-      <p>Login</p>
-    </a>
+    <div
+      *ngIf="isAuthenticated$ | async as isAuthenticated; else noAuthenticated"
+    >
+      <div class="dropdown">
+        <img class="avatar" src="assets/images/Ikbal.png" alt="avatar" />
+        <div class="dropdown-content">
+          <a routerLink="#">{{ userEmail }}</a>
+          <a routerLink="#" (click)="signout()">Sign Out</a>
+        </div>
+      </div>
+    </div>
+    <ng-template #noAuthenticated>
+      <a class="btn_login" routerLink="signin">
+        <img
+          src="assets/icons/login_btn_key.svg"
+          alt="logo"
+          width="16"
+          height="16"
+        />
+        <p>Login</p>
+      </a>
+    </ng-template>
   </div>
 </header>

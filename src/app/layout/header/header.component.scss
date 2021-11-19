@@ -62,4 +62,69 @@ header {
       background: #3d55df;
     }
   }
+  .btn_signout {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    background: #cc33ff;
+    width: fit-content;
+    border-radius: 4px;
+    box-shadow: 0px 7px 14px rgba(50, 50, 93, 0.1),
+      0px 3px 6px rgba(0, 0, 0, 0.08);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #d966ff;
+    }
+    &:active {
+      transform: scale(0.95);
+      background: #cc33ff;
+    }
+  }
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 7px 14px rgba(50, 50, 93, 0.1),
+    0px 3px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  padding-top: 10px;
+}
+
+.dropdown-content a {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

@@ -6,9 +6,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignInComponent } from './signin/signin.component';
 import { SignUpComponent } from './signup/signup.component';
 
+import { AuthService } from '../core/services/auth.service';
+
 @NgModule({
   declarations: [SignInComponent, SignUpComponent],
   imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule],
   exports: [SignInComponent, SignUpComponent],
+  providers: [AuthService],
 })
 export class AuthModule {}

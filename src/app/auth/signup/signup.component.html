@@ -3,7 +3,7 @@
     <div class="card_content">
       <div class="form_section">
         <div class="form_title">SIGN UP</div>
-        <form class="form_content" [formGroup]="form" (ngSubmit)="login()">
+        <form class="form_content" [formGroup]="form" (ngSubmit)="signup()">
           <div class="form_group">
             <label for="email">Email: </label>
             <input
@@ -23,12 +23,12 @@
             />
           </div>
           <div class="form_group">
-            <label for="password">Connfirm: </label>
+            <label for="password">Confirm: </label>
             <input
-              id="repassword"
+              id="confirmPassword"
               type="password"
               placeholder="Please confirm the password"
-              formControlName="repassword"
+              formControlName="confirmPassword"
             />
           </div>
           <button>Sign Up</button>
